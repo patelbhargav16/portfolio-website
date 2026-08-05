@@ -1,15 +1,31 @@
-# Personal Portfolio Website
+# 💼 Bhargav Patel - Portfolio Website
 
-This project is being developed as part of my Web Development Internship at Codomax Digital Solutions.
+This repository contains my personal portfolio website, developed as part of my **Web Development Internship at Codomax**.
 
-## Technologies
+## 🚀 Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3
 - Git
 - GitHub
 
-## Status
+## 📌 Features
 
-🚧 Under Development
+- Responsive Navigation Bar
+- Hero Section
+- About Section
+- Modern UI Design
+- Clean Semantic HTML
+
+## 📂 Project Status
+
+🚧 Currently under development.
+
+More sections such as Skills, Projects, Contact, and Responsive Design will be added during the internship.
+
+## 👨‍💻 Author
+
+**Bhargav Patel**
+
+- LinkedIn: https://linkedin.com/in/bhargavpatel1608
+- GitHub: https://github.com/patelbhargav16
