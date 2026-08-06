@@ -119,6 +119,37 @@ nav{
     margin-bottom:35px;
 }
 
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    background:#e2e8f0;
+    color:#1e293b;
+}
+
+.btn-secondary:hover{
+    background:#cbd5e1;
+}
+
 /* ==========================================
    BUTTONS
 ========================================== */
