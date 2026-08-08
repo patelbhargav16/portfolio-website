@@ -374,22 +374,76 @@ footer{
     text-align:center;
     padding:25px 0;
 }
-
-
 /* ==========================================
    DAY 6 - RESPONSIVE DESIGN
 ========================================== */
 
-/* Tablet */
+
+/* ==========================================
+   TABLET
+   769px - 992px
+========================================== */
+
 @media (max-width:992px){
-    /* tablet rules here */
+
+    /* =========================
+       Hero
+    ========================= */
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+        max-width:600px;
+    }
+
+    .hero-text h1{
+        font-size:48px;
+    }
+
+    .hero-text h2{
+        font-size:28px;
+    }
+
+
+    /* =========================
+       Skills
+    ========================= */
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+
+    /* =========================
+       Projects
+    ========================= */
+
+    .projects-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
 
-/* Mobile */
+/* ==========================================
+   MOBILE
+   481px - 768px
+========================================== */
+
 @media (max-width:768px){
 
-    /* Navbar */
+    /* =========================
+       Navbar
+    ========================= */
 
     .navbar{
         flex-direction:column;
@@ -404,7 +458,9 @@ footer{
     }
 
 
-    /* Hero */
+    /* =========================
+       Hero
+    ========================= */
 
     .hero{
         min-height:auto;
@@ -412,11 +468,18 @@ footer{
     }
 
     .hero-content{
+        flex-direction:column;
+        text-align:center;
         gap:40px;
+    }
+
+    .hero-text{
+        width:100%;
     }
 
     .hero-text h1{
         font-size:38px;
+        line-height:1.2;
     }
 
     .hero-text h2{
@@ -427,20 +490,32 @@ footer{
         font-size:16px;
     }
 
+
+    /* =========================
+       Hero Buttons
+    ========================= */
+
     .hero-buttons{
         justify-content:center;
         flex-wrap:wrap;
+        gap:15px;
     }
 
 
-    /* Hero Image */
+    /* =========================
+       Hero Image
+    ========================= */
 
     .hero-image{
+        width:100%;
+        max-width:500px;
         height:400px;
     }
 
 
-    /* Section Headings */
+    /* =========================
+       Section Headings
+    ========================= */
 
     .section-title,
     .skills h2,
@@ -449,7 +524,9 @@ footer{
     }
 
 
-    /* Skills */
+    /* =========================
+       Skills
+    ========================= */
 
     .skills-grid{
         grid-template-columns:1fr;
@@ -464,7 +541,9 @@ footer{
     }
 
 
-    /* Projects */
+    /* =========================
+       Projects
+    ========================= */
 
     .projects-grid{
         grid-template-columns:1fr;
@@ -481,12 +560,21 @@ footer{
 }
 
 
-/* Small Mobile */
+/* ==========================================
+   SMALL MOBILE
+   480px and below
+========================================== */
+
 @media (max-width:480px){
 
     .container{
         width:92%;
     }
+
+
+    /* =========================
+       Hero
+    ========================= */
 
     .hero-text h1{
         font-size:32px;
@@ -495,6 +583,11 @@ footer{
     .hero-text h2{
         font-size:20px;
     }
+
+
+    /* =========================
+       Hero Buttons
+    ========================= */
 
     .hero-buttons{
         flex-direction:column;
@@ -506,7 +599,13 @@ footer{
         text-align:center;
     }
 
+
+    /* =========================
+       Hero Image
+    ========================= */
+
     .hero-image{
+        width:100%;
         height:300px;
     }
 
