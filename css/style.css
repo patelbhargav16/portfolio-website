@@ -157,19 +157,15 @@ header{
 .hero-text{
     flex:1.2;
 }
-
 .hero-image{
     flex:0.8;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.hero-image{
-    flex:1;
     height:600px;
     border-radius:20px;
     background:#e2e8f0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 /* ==========================================
@@ -368,44 +364,55 @@ footer{
     text-align:center;
     padding:25px 0;
 }
-
 /* ==========================================
-   RESPONSIVE
+   FOOTER
 ========================================== */
 
-@media (max-width:992px){
-
-    .hero-content{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .hero-text h1{
-        font-size:48px;
-    }
-
-    .hero-text h2{
-        font-size:28px;
-    }
-
+footer{
+    background:#1e293b;
+    color:#fff;
+    text-align:center;
+    padding:25px 0;
 }
 
+
+/* ==========================================
+   DAY 6 - RESPONSIVE DESIGN
+========================================== */
+
+/* Tablet */
+@media (max-width:992px){
+    /* tablet rules here */
+}
+
+
+/* Mobile */
 @media (max-width:768px){
 
-    nav{
+    /* Navbar */
+
+    .navbar{
         flex-direction:column;
-        gap:20px;
+        gap:15px;
+        text-align:center;
     }
 
     .nav-links{
         flex-wrap:wrap;
         justify-content:center;
-        gap:18px;
+        gap:15px;
     }
+
+
+    /* Hero */
 
     .hero{
         min-height:auto;
         padding:80px 0;
+    }
+
+    .hero-content{
+        gap:40px;
     }
 
     .hero-text h1{
@@ -425,20 +432,61 @@ footer{
         flex-wrap:wrap;
     }
 
+
+    /* Hero Image */
+
+    .hero-image{
+        height:400px;
+    }
+
+
+    /* Section Headings */
+
     .section-title,
     .skills h2,
     .projects h2{
         font-size:34px;
     }
 
-    .skills-grid,
+
+    /* Skills */
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skill-card{
+        padding:25px;
+    }
+
+    .skill-card h3{
+        font-size:22px;
+    }
+
+
+    /* Projects */
+
     .projects-grid{
         grid-template-columns:1fr;
     }
 
+    .project-card{
+        padding:25px;
+    }
+
+    .project-card h3{
+        font-size:21px;
+    }
+
 }
 
+
+/* Small Mobile */
 @media (max-width:480px){
+
+    .container{
+        width:92%;
+    }
 
     .hero-text h1{
         font-size:32px;
@@ -448,12 +496,18 @@ footer{
         font-size:20px;
     }
 
-    button{
+    .hero-buttons{
+        flex-direction:column;
         width:100%;
     }
 
-    .hero-buttons{
-        flex-direction:column;
+    .hero-buttons .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-image{
+        height:300px;
     }
 
 }
